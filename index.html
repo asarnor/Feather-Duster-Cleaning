@@ -1,0 +1,1844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feather Duster Cleaning | Commercial, Residential & Event Cleaning</title>
+  <meta name="description" content="Feather Duster Cleaning provides commercial, residential, and event cleaning across Los Angeles, Inland Empire, and Orange County with 24/7 availability.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Feather Duster Cleaning">
+  <meta property="og:description" content="Commercial, residential, and event cleaning across Los Angeles, Inland Empire, and Orange County with 24/7 operations.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="Logo%20Transparent.PNG">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Feather Duster Cleaning">
+  <meta name="twitter:description" content="Commercial, residential, and event cleaning across Los Angeles, Inland Empire, and Orange County with 24/7 operations.">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CleaningService",
+      "name": "Feather Duster Cleaning",
+      "description": "Feather Duster Cleaning provides commercial, residential, and event cleaning across Los Angeles, Inland Empire, and Orange County with 24/7 availability.",
+      "telephone": "+1-714-951-1041",
+      "email": "Dusty@FeatherDusterCleaning.com",
+      "areaServed": [
+        "Los Angeles",
+        "Inland Empire",
+        "Orange County"
+      ],
+      "serviceType": [
+        "Commercial cleaning",
+        "Residential cleaning",
+        "Event cleaning"
+      ],
+      "hoursAvailable": "Mo-Su 00:00-23:59"
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What services does Feather Duster Cleaning offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Feather Duster Cleaning provides commercial, residential, and event cleaning services tailored to offices, homes, venues, and high-traffic spaces."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What areas do you serve?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We serve Los Angeles, Inland Empire, and Orange County."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you operate 24/7?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Feather Duster Cleaning operates 24/7 and can coordinate daytime, after-hours, night, and event-based service schedules."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer recurring cleaning plans?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We offer recurring plans for commercial spaces and routine residential service, along with flexible scheduling for event support."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I request a quote?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can request a quote by text or email. Use the contact buttons on the page to choose the option that works best for you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is included in event cleaning support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Event cleaning support can include pre-event prep, on-site touchpoint refreshes, trash management, restroom attention, and post-event cleanup."
+          }
+        }
+      ]
+    }
+  </script>
+  <style>
+    :root {
+      --bg: #f5f0e8;
+      --surface: #fdf8f1;
+      --ink: #0f2940;
+      --muted: #5d6b77;
+      --accent: #d3a14a;
+      --line: rgba(15, 41, 64, 0.12);
+      --shadow: 0 24px 80px rgba(15, 41, 64, 0.14);
+      --radius: 28px;
+      --content: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(211, 161, 74, 0.18), transparent 30%),
+        linear-gradient(180deg, #faf6ef 0%, var(--bg) 100%);
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page-shell {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page-shell::before,
+    .page-shell::after {
+      content: "";
+      position: fixed;
+      inset: auto;
+      z-index: 0;
+      pointer-events: none;
+      border-radius: 999px;
+      filter: blur(20px);
+      opacity: 0.6;
+    }
+
+    .page-shell::before {
+      top: 9rem;
+      right: -7rem;
+      width: 18rem;
+      height: 18rem;
+      background: rgba(211, 161, 74, 0.22);
+    }
+
+    .page-shell::after {
+      bottom: 10rem;
+      left: -6rem;
+      width: 16rem;
+      height: 16rem;
+      background: rgba(15, 41, 64, 0.12);
+    }
+
+    header,
+    main,
+    footer {
+      position: relative;
+      z-index: 1;
+    }
+
+    .topbar {
+      width: min(calc(100% - 2rem), var(--content));
+      margin: 0 auto;
+      padding: 1.4rem 0 0;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1rem 1.25rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(253, 248, 241, 0.82);
+      backdrop-filter: blur(16px);
+      box-shadow: 0 10px 35px rgba(15, 41, 64, 0.08);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      min-width: 0;
+    }
+
+    .brand img {
+      width: 2.8rem;
+      height: 2.8rem;
+      object-fit: contain;
+    }
+
+    .brand-mark {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+      min-width: 0;
+    }
+
+    .brand-mark strong {
+      font-size: 1rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .brand-mark span {
+      color: var(--muted);
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.25rem;
+      font-size: 0.92rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+    }
+
+    .nav-cta {
+      padding: 0.95rem 1.3rem;
+      border-radius: 999px;
+      background: var(--ink);
+      color: #fff;
+      font-size: 0.9rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .hero {
+      width: min(calc(100% - 2rem), var(--content));
+      margin: 1rem auto 0;
+      min-height: calc(100svh - 7rem);
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+      gap: 2rem;
+      align-items: stretch;
+      padding: 1rem 0 2rem;
+    }
+
+    .hero-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 2.6rem 0 1.2rem;
+      animation: rise 850ms ease forwards;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 3rem;
+      height: 1px;
+      background: currentColor;
+      opacity: 0.55;
+    }
+
+    h1 {
+      margin: 1rem 0 0;
+      max-width: 11ch;
+      font-size: clamp(3.2rem, 8vw, 7rem);
+      line-height: 0.95;
+      letter-spacing: -0.05em;
+    }
+
+    .hero-copy p {
+      max-width: 38rem;
+      margin: 1.4rem 0 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+      line-height: 1.7;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      padding: 1rem 1.45rem;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-size: 0.95rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      transition: transform 180ms ease, background 180ms ease, color 180ms ease;
+    }
+
+    .button.primary {
+      background: var(--accent);
+      color: #21180a;
+    }
+
+    .button.secondary {
+      border-color: var(--line);
+      background: rgba(253, 248, 241, 0.7);
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button:focus-visible,
+    .nav-cta:focus-visible,
+    .contact-option:focus-visible,
+    .modal-close:focus-visible {
+      outline: 2px solid rgba(211, 161, 74, 0.9);
+      outline-offset: 3px;
+    }
+
+    .hero-meta {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--line);
+    }
+
+    .hero-meta strong {
+      display: block;
+      font-size: 1.8rem;
+      font-weight: 400;
+    }
+
+    .hero-meta span {
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    .service-area-note {
+      margin-top: 1.1rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .trust-strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .trust-item {
+      padding: 1.1rem 1.15rem;
+      border-top: 1px solid var(--line);
+    }
+
+    .trust-item strong {
+      display: block;
+      font-size: 1.02rem;
+      font-weight: 400;
+    }
+
+    .trust-item span {
+      display: block;
+      margin-top: 0.45rem;
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 46rem;
+      border-radius: calc(var(--radius) + 10px);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      background:
+        linear-gradient(180deg, rgba(15, 41, 64, 0.14) 0%, rgba(15, 41, 64, 0.72) 100%),
+        linear-gradient(140deg, #9cb8c7 0%, #20435f 58%, #102131 100%);
+      animation: floatIn 1000ms ease forwards;
+    }
+
+    .hero-visual::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(115deg, rgba(255, 255, 255, 0.1) 0%, transparent 36%),
+        radial-gradient(circle at top right, rgba(211, 161, 74, 0.33), transparent 26%);
+    }
+
+    .hero-image {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding-top: 2rem;
+    }
+
+    .hero-image img {
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+      object-position: center bottom;
+      mix-blend-mode: normal;
+      transform: translateY(1.5rem);
+    }
+
+    .hero-badge,
+    .hero-services {
+      position: absolute;
+      background: rgba(253, 248, 241, 0.88);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      box-shadow: 0 18px 48px rgba(15, 41, 64, 0.18);
+    }
+
+    .hero-badge {
+      top: 1.4rem;
+      left: 1.4rem;
+      padding: 1rem 1.1rem;
+      border-radius: 1.25rem;
+      max-width: 17rem;
+    }
+
+    .hero-badge span,
+    .hero-services li span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .hero-badge strong {
+      display: block;
+      margin-top: 0.35rem;
+      font-size: 1.25rem;
+      line-height: 1.2;
+    }
+
+    .hero-services {
+      right: 1.4rem;
+      bottom: 1.4rem;
+      padding: 1.2rem;
+      border-radius: 1.5rem;
+      width: min(18rem, calc(100% - 2.8rem));
+    }
+
+    .hero-services ul {
+      list-style: none;
+      margin: 0.85rem 0 0;
+      padding: 0;
+      display: grid;
+      gap: 0.8rem;
+    }
+
+    .hero-services li {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-bottom: 0.8rem;
+      border-bottom: 1px solid rgba(15, 41, 64, 0.08);
+      font-size: 0.95rem;
+    }
+
+    .hero-services li:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    section {
+      width: min(calc(100% - 2rem), var(--content));
+      margin: 0 auto;
+      padding: 3rem 0;
+    }
+
+    .services-intro {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: 2rem;
+      align-items: end;
+    }
+
+    h2 {
+      margin: 0.8rem 0 0;
+      font-size: clamp(2.4rem, 4vw, 4.2rem);
+      line-height: 0.98;
+      letter-spacing: -0.05em;
+    }
+
+    .section-note {
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.75;
+      max-width: 40rem;
+      justify-self: end;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .service-panel {
+      position: relative;
+      min-height: 29rem;
+      padding: 2rem;
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: linear-gradient(180deg, rgba(15, 41, 64, 0.06), rgba(15, 41, 64, 0.12));
+      border: 1px solid rgba(15, 41, 64, 0.08);
+      box-shadow: 0 14px 40px rgba(15, 41, 64, 0.08);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      transform: translateY(24px);
+      opacity: 0;
+      animation: rise 700ms ease forwards;
+    }
+
+    .service-panel:nth-child(2) {
+      animation-delay: 120ms;
+    }
+
+    .service-panel:nth-child(3) {
+      animation-delay: 240ms;
+    }
+
+    .service-panel::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, transparent 15%, rgba(15, 41, 64, 0.76) 100%),
+        var(--panel-bg);
+      background-size: cover;
+      background-position: center;
+      transition: transform 500ms ease;
+    }
+
+    .service-panel:hover::before {
+      transform: scale(1.04);
+    }
+
+    .service-panel > * {
+      position: relative;
+      z-index: 1;
+      color: #fff;
+    }
+
+    .service-panel .label {
+      margin-bottom: auto;
+      display: inline-flex;
+      width: fit-content;
+      padding: 0.5rem 0.8rem;
+      border-radius: 999px;
+      background: rgba(253, 248, 241, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      backdrop-filter: blur(8px);
+    }
+
+    .service-panel h3 {
+      margin: 0.9rem 0 0;
+      font-size: 2.05rem;
+      font-weight: 400;
+      line-height: 1.02;
+    }
+
+    .service-panel p {
+      margin: 0.85rem 0 0;
+      max-width: 22rem;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 0.98rem;
+      line-height: 1.7;
+    }
+
+    .service-panel ul {
+      margin: 1.2rem 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 0.45rem;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 0.92rem;
+    }
+
+    .service-panel li::before {
+      content: "• ";
+      color: var(--accent);
+    }
+
+    .assurance {
+      display: grid;
+      grid-template-columns: minmax(300px, 0.92fr) minmax(0, 1.08fr);
+      gap: 1.5rem;
+      align-items: stretch;
+    }
+
+    .assurance-visual,
+    .assurance-copy {
+      border-radius: var(--radius);
+      overflow: hidden;
+      min-height: 25rem;
+    }
+
+    .assurance-visual {
+      position: relative;
+      background:
+        linear-gradient(180deg, rgba(15, 41, 64, 0.2), rgba(15, 41, 64, 0.65)),
+        url("BANNER%20-%20FEATHER%20DUSTER%20-%20LOGO%20-%20Blue.pdf%20%281080%20x%201080%20px%29%20%281600%20x%20503%20px%29.png")
+          center/cover no-repeat;
+      box-shadow: var(--shadow);
+    }
+
+    .assurance-visual .overlay-card {
+      position: absolute;
+      left: 1.5rem;
+      right: 1.5rem;
+      bottom: 1.5rem;
+      padding: 1.3rem 1.4rem;
+      border-radius: 1.4rem;
+      background: rgba(253, 248, 241, 0.9);
+      color: var(--ink);
+      backdrop-filter: blur(12px);
+    }
+
+    .assurance-copy {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      padding: 2.1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .checklist {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem 1.5rem;
+    }
+
+    .checklist div {
+      padding-top: 0.9rem;
+      border-top: 1px solid var(--line);
+    }
+
+    .checklist strong {
+      display: block;
+      font-size: 1.05rem;
+      font-weight: 400;
+    }
+
+    .checklist span {
+      display: block;
+      margin-top: 0.5rem;
+      color: var(--muted);
+      line-height: 1.65;
+      font-size: 0.96rem;
+    }
+
+    .final-cta {
+      padding-top: 1rem;
+      padding-bottom: 4rem;
+    }
+
+    .cta-wrap {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 2rem;
+      align-items: center;
+      padding: 2rem 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .cta-wrap p {
+      margin: 0.85rem 0 0;
+      max-width: 38rem;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+
+    .contact-block {
+      display: grid;
+      gap: 0.7rem;
+      min-width: 17rem;
+      padding: 1.25rem 1.4rem;
+      border: 1px solid var(--line);
+      border-radius: 1.4rem;
+      background: rgba(253, 248, 241, 0.82);
+    }
+
+    .contact-block span {
+      color: var(--muted);
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .contact-block a {
+      font-size: 1.05rem;
+      line-height: 1.4;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin-top: 0.35rem;
+    }
+
+    .contact-actions .button {
+      width: 100%;
+    }
+
+    .signature-note {
+      margin-top: 1.2rem;
+      color: var(--muted);
+      font-size: 0.94rem;
+      line-height: 1.7;
+    }
+
+    .contact-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 20;
+      display: grid;
+      place-items: center;
+      padding: 1rem;
+      background: rgba(10, 24, 37, 0.48);
+      backdrop-filter: blur(16px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 220ms ease;
+    }
+
+    .contact-modal[aria-hidden="false"] {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .modal-panel {
+      width: min(100%, 32rem);
+      padding: 1.45rem;
+      border-radius: 1.8rem;
+      background: rgba(253, 248, 241, 0.96);
+      border: 1px solid rgba(15, 41, 64, 0.12);
+      box-shadow: 0 28px 90px rgba(15, 41, 64, 0.22);
+      transform: translateY(20px) scale(0.98);
+      transition: transform 220ms ease;
+    }
+
+    .contact-modal[aria-hidden="false"] .modal-panel {
+      transform: translateY(0) scale(1);
+    }
+
+    .modal-top {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .modal-top h3 {
+      margin: 0.75rem 0 0;
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: -0.04em;
+    }
+
+    .modal-copy {
+      margin: 1rem 0 0;
+      color: var(--muted);
+      line-height: 1.75;
+      font-size: 0.98rem;
+    }
+
+    .modal-close {
+      appearance: none;
+      border: 0;
+      background: rgba(15, 41, 64, 0.06);
+      color: var(--ink);
+      width: 2.75rem;
+      height: 2.75rem;
+      border-radius: 999px;
+      font-size: 1.15rem;
+      cursor: pointer;
+    }
+
+    .contact-options {
+      display: grid;
+      gap: 0.9rem;
+      margin-top: 1.5rem;
+    }
+
+    .contact-option {
+      display: grid;
+      gap: 0.4rem;
+      padding: 1.1rem 1.15rem;
+      border-radius: 1.3rem;
+      border: 1px solid var(--line);
+      background: #fffdfa;
+      text-align: left;
+      cursor: pointer;
+      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+    }
+
+    .contact-option:hover {
+      transform: translateY(-2px);
+      border-color: rgba(211, 161, 74, 0.45);
+      box-shadow: 0 14px 32px rgba(15, 41, 64, 0.08);
+    }
+
+    .contact-option span {
+      color: var(--muted);
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .contact-option strong {
+      font-size: 1.1rem;
+      font-weight: 400;
+    }
+
+    .contact-meta {
+      margin-top: 1.15rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+
+    .faq-shell {
+      display: grid;
+      grid-template-columns: minmax(280px, 0.85fr) minmax(0, 1.15fr);
+      gap: 1.5rem;
+      align-items: start;
+    }
+
+    .faq-intro,
+    .faq-list {
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .faq-intro {
+      background:
+        linear-gradient(180deg, rgba(15, 41, 64, 0.06), rgba(15, 41, 64, 0.12)),
+        rgba(253, 248, 241, 0.9);
+      border: 1px solid var(--line);
+      padding: 2rem;
+      position: sticky;
+      top: 1rem;
+    }
+
+    .faq-intro p {
+      margin: 1rem 0 0;
+      color: var(--muted);
+      line-height: 1.75;
+      font-size: 1rem;
+    }
+
+    .faq-note {
+      margin-top: 1.4rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.7;
+    }
+
+    .faq-list {
+      display: grid;
+      gap: 0.9rem;
+    }
+
+    .faq-item {
+      background: rgba(253, 248, 241, 0.9);
+      border: 1px solid var(--line);
+      border-radius: 1.4rem;
+      padding: 1.3rem 1.4rem;
+      box-shadow: 0 12px 32px rgba(15, 41, 64, 0.06);
+    }
+
+    .faq-item summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      font-size: 1.12rem;
+      line-height: 1.4;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      content: "+";
+      flex: 0 0 auto;
+      width: 2rem;
+      height: 2rem;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      background: rgba(15, 41, 64, 0.06);
+      font-size: 1.2rem;
+    }
+
+    .faq-item[open] summary::after {
+      content: "−";
+    }
+
+    .faq-answer {
+      margin: 0.9rem 0 0;
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 0.98rem;
+      max-width: 42rem;
+    }
+
+    .process-shell {
+      display: grid;
+      grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+      gap: 1.5rem;
+      align-items: start;
+    }
+
+    .process-intro,
+    .process-grid {
+      border-radius: var(--radius);
+    }
+
+    .process-intro {
+      padding: 2rem;
+      background: rgba(253, 248, 241, 0.88);
+      border: 1px solid var(--line);
+    }
+
+    .process-intro p {
+      margin: 1rem 0 0;
+      color: var(--muted);
+      line-height: 1.75;
+      font-size: 1rem;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .process-card {
+      padding: 1.45rem;
+      border-radius: 1.5rem;
+      background: rgba(253, 248, 241, 0.92);
+      border: 1px solid var(--line);
+      box-shadow: 0 12px 32px rgba(15, 41, 64, 0.06);
+    }
+
+    .process-number {
+      display: inline-flex;
+      width: 2rem;
+      height: 2rem;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      background: rgba(211, 161, 74, 0.16);
+      color: var(--ink);
+      font-size: 0.88rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .process-card h3 {
+      margin: 1rem 0 0;
+      font-size: 1.35rem;
+      font-weight: 400;
+      line-height: 1.1;
+    }
+
+    .process-card p {
+      margin: 0.75rem 0 0;
+      color: var(--muted);
+      font-size: 0.96rem;
+      line-height: 1.7;
+    }
+
+    .reviews-shell {
+      display: grid;
+      grid-template-columns: minmax(280px, 0.78fr) minmax(0, 1.22fr);
+      gap: 1.5rem;
+      align-items: start;
+    }
+
+    .reviews-intro {
+      background:
+        linear-gradient(180deg, rgba(15, 41, 64, 0.08), rgba(15, 41, 64, 0.14)),
+        rgba(253, 248, 241, 0.92);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 2rem;
+      position: sticky;
+      top: 1rem;
+    }
+
+    .reviews-intro p {
+      margin: 1rem 0 0;
+      color: var(--muted);
+      line-height: 1.75;
+      font-size: 1rem;
+    }
+
+    .reviews-badge {
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.7;
+    }
+
+    .reviews-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1.2rem;
+      padding: 0.95rem 1.25rem;
+      border-radius: 999px;
+      background: var(--ink);
+      color: #fff;
+      font-size: 0.88rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: transform 180ms ease, opacity 180ms ease;
+    }
+
+    .reviews-cta:hover {
+      transform: translateY(-2px);
+      opacity: 0.96;
+    }
+
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .review-card {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      min-height: 17rem;
+      padding: 1.45rem;
+      border-radius: 1.5rem;
+      background: rgba(253, 248, 241, 0.92);
+      border: 1px solid var(--line);
+      box-shadow: 0 14px 38px rgba(15, 41, 64, 0.06);
+    }
+
+    .review-card.featured {
+      grid-column: 1 / -1;
+      background:
+        linear-gradient(180deg, rgba(211, 161, 74, 0.08), rgba(253, 248, 241, 0.96)),
+        rgba(253, 248, 241, 0.96);
+    }
+
+    .review-stars {
+      color: var(--accent);
+      letter-spacing: 0.18em;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+    }
+
+    .review-card blockquote {
+      margin: 0;
+      font-size: 1.08rem;
+      line-height: 1.75;
+      color: var(--ink);
+    }
+
+    .review-card.featured blockquote {
+      font-size: 1.18rem;
+      max-width: 54rem;
+    }
+
+    .review-card footer {
+      width: 100%;
+      margin: auto 0 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 1rem;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .review-card footer strong {
+      display: block;
+      color: var(--ink);
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    .review-card footer span {
+      display: block;
+      margin-top: 0.3rem;
+    }
+
+    footer {
+      width: min(calc(100% - 2rem), var(--content));
+      margin: 0 auto;
+      padding: 0 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @keyframes rise {
+      from {
+        opacity: 0;
+        transform: translateY(24px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes floatIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.98);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    @media (max-width: 980px) {
+      .nav {
+        border-radius: 1.5rem;
+        padding: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .hero,
+      .services-intro,
+      .assurance,
+      .cta-wrap,
+      .faq-shell,
+      .reviews-shell,
+      .process-shell {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-copy {
+        padding-top: 1.4rem;
+      }
+
+      .hero-visual {
+        min-height: 38rem;
+      }
+
+      .section-note {
+        justify-self: start;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cta-wrap {
+        align-items: start;
+      }
+
+      .faq-intro {
+        position: static;
+      }
+
+      .reviews-intro {
+        position: static;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .topbar,
+      .hero,
+      section,
+      footer {
+        width: min(calc(100% - 1.1rem), var(--content));
+      }
+
+      .brand-mark strong {
+        white-space: normal;
+        line-height: 1.2;
+      }
+
+      .nav-links {
+        gap: 0.8rem;
+        font-size: 0.76rem;
+      }
+
+      h1 {
+        max-width: 100%;
+        font-size: clamp(2.8rem, 14vw, 4.6rem);
+      }
+
+      .hero-copy p,
+      .section-note,
+      .cta-wrap p {
+        font-size: 0.98rem;
+      }
+
+      .hero-meta,
+      .checklist,
+      .review-grid,
+      .trust-strip,
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-visual {
+        min-height: 32rem;
+      }
+
+      .hero-badge,
+      .hero-services {
+        position: static;
+        width: auto;
+        margin: 1rem;
+      }
+
+      .hero-image {
+        align-items: center;
+        padding-top: 0;
+      }
+
+      .hero-image img {
+        height: auto;
+        max-height: 75%;
+      }
+
+      .assurance-copy {
+        padding: 1.5rem;
+      }
+
+      .modal-panel {
+        padding: 1.15rem;
+      }
+
+      footer {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <nav class="nav">
+        <a class="brand" href="#top">
+          <img src="Logo%20Transparent.PNG" alt="Feather Duster Cleaning logo">
+          <div class="brand-mark">
+            <strong>Feather Duster</strong>
+            <span>Cleaning Services</span>
+          </div>
+        </a>
+        <div class="nav-links">
+          <a href="#services">Services</a>
+          <a href="#standards">Standards</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button class="nav-cta" type="button" data-contact-trigger>Book a Walkthrough</button>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <div>
+            <div class="eyebrow">Locally trusted cleaning partner</div>
+            <h1>Clean spaces that feel ready for anything.</h1>
+            <p>
+              Feather Duster Cleaning brings polished, dependable service to offices,
+              homes, and high-traffic event spaces with the same calm attention to detail.
+            </p>
+            <div class="service-area-note">
+              Serving Los Angeles, Inland Empire, and Orange County • Operating 24/7
+            </div>
+            <div class="hero-actions">
+              <a class="button primary" href="#services">Explore Services</a>
+              <button class="button secondary" type="button" data-contact-trigger>Request a Quote</button>
+            </div>
+          </div>
+
+          <div class="hero-meta">
+            <div>
+              <strong>Commercial</strong>
+              <span>Office suites, retail storefronts, and recurring workplace care.</span>
+            </div>
+            <div>
+              <strong>Residential</strong>
+              <span>Routine home cleaning, deep resets, and move-in or move-out support.</span>
+            </div>
+            <div>
+              <strong>Event</strong>
+              <span>Pre-event shine, on-site refresh, and post-event recovery crews.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-badge">
+            <span>Signature approach</span>
+            <strong>Detail-first service with a white-glove finish.</strong>
+          </div>
+          <div class="hero-image">
+            <img src="FDC%20-%20Headshot%20-%20Jim.png" alt="Feather Duster Cleaning representative">
+          </div>
+          <div class="hero-services">
+            <span>Core offerings</span>
+            <ul>
+              <li><strong>Commercial</strong><span>Daily and weekly plans</span></li>
+              <li><strong>Residential</strong><span>Flexible in-home service</span></li>
+              <li><strong>Event</strong><span>Before, during, and after</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="trust-strip">
+          <div class="trust-item">
+            <strong>24/7 availability</strong>
+            <span>Flexible scheduling for routine service, after-hours work, and event days.</span>
+          </div>
+          <div class="trust-item">
+            <strong>Three service lanes</strong>
+            <span>Commercial, residential, and event cleaning under one dependable brand.</span>
+          </div>
+          <div class="trust-item">
+            <strong>Southern California coverage</strong>
+            <span>Serving Los Angeles, Inland Empire, and Orange County.</span>
+          </div>
+          <div class="trust-item">
+            <strong>Client-trusted team</strong>
+            <span>Reliable communication, detailed service, and repeat business across settings.</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="services-intro">
+          <div>
+            <div class="eyebrow">Three service tracks</div>
+            <h2>Built for workdays, home life, and event days.</h2>
+          </div>
+          <p class="section-note">
+            One brand, three clearly defined service tracks, and a premium presentation designed
+            to convert both practical homeowners and higher-expectation commercial or event clients.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-panel" style="--panel-bg: linear-gradient(135deg, rgba(15,41,64,0.4), rgba(15,41,64,0.82)), url('FD%20Blue.png') center/140% no-repeat;">
+            <div class="label">Commercial</div>
+            <h3>Reliable care for professional spaces.</h3>
+            <p>
+              Keep offices, studios, showrooms, and shared facilities consistently guest-ready
+              with scheduled service and detail-driven upkeep.
+            </p>
+            <ul>
+              <li>Recurring janitorial plans</li>
+              <li>Entry, lobby, and restroom refreshes</li>
+              <li>After-hours scheduling</li>
+            </ul>
+          </article>
+
+          <article class="service-panel" style="--panel-bg: linear-gradient(135deg, rgba(211,161,74,0.28), rgba(15,41,64,0.8)), url('FD%20White.png') center/135% no-repeat;">
+            <div class="label">Residential</div>
+            <h3>Comfort-first cleaning for everyday living.</h3>
+            <p>
+              From weekly maintenance to deep seasonal resets, the residential lane feels warm,
+              personal, and easy to trust.
+            </p>
+            <ul>
+              <li>Routine whole-home cleaning</li>
+              <li>Move-in and move-out service</li>
+              <li>Kitchen, bath, and high-touch detailing</li>
+            </ul>
+          </article>
+
+          <article class="service-panel" style="--panel-bg: linear-gradient(135deg, rgba(15,41,64,0.24), rgba(15,41,64,0.84)), url('BANNER%20-%20FEATHER%20DUSTER%20-%20LOGO%20-%20Blue.pdf%20%281080%20x%201080%20px%29%20%281600%20x%20503%20px%29.png') center/cover no-repeat;">
+            <div class="label">Event</div>
+            <h3>Fast-turn cleaning for before and after the crowd.</h3>
+            <p>
+              Event support is framed as quick, polished, and high-capacity so the page can speak
+              to venues, hosts, pop-ups, and community gatherings.
+            </p>
+            <ul>
+              <li>Pre-event prep and staging cleanup</li>
+              <li>On-site touchpoint refreshes</li>
+              <li>Post-event breakdown recovery</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="standards" class="assurance">
+        <div class="assurance-visual">
+          <div class="overlay-card">
+            <span class="eyebrow" style="margin: 0; color: var(--muted);">Presentation matters</span>
+            <strong style="display: block; margin-top: 0.7rem; font-size: 1.5rem; font-weight: 400;">
+              A calm, premium look built around trust, order, and readiness.
+            </strong>
+          </div>
+        </div>
+
+        <div class="assurance-copy">
+          <div>
+            <div class="eyebrow">Why clients choose us</div>
+            <h2>Clean branding without the generic cleaning-site look.</h2>
+            <p class="section-note" style="justify-self: start; margin-top: 1rem;">
+              Instead of crowded cards and coupon-style blocks, the site uses strong spacing,
+              confident typography, and a hospitality-inspired tone that can appeal to business,
+              household, and event clients at once.
+            </p>
+          </div>
+
+            <div class="checklist">
+            <div>
+              <strong>Immediate service clarity</strong>
+              <span>Commercial, residential, and event services all show up in the first viewport.</span>
+            </div>
+            <div>
+              <strong>Brand-led composition</strong>
+              <span>The logo, palette, and team image carry the page instead of stock-style clutter.</span>
+            </div>
+            <div>
+              <strong>Premium but approachable</strong>
+              <span>The tone feels polished enough for offices and events while still welcoming for homes.</span>
+            </div>
+            <div>
+              <strong>Easy next-step CTA</strong>
+              <span>The page closes by guiding visitors toward a walkthrough or custom quote.</span>
+            </div>
+            <p class="signature-note">
+              The result is a cleaner digital presence that feels established, responsive, and ready
+              for upscale clients who care about presentation as much as results.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="process-shell">
+          <div class="process-intro">
+            <div class="eyebrow">How it works</div>
+            <h2>A booking flow that feels simple and professional.</h2>
+            <p>
+              The site now walks visitors from confidence to contact in a way that feels fast,
+              premium, and easy to act on from mobile or desktop.
+            </p>
+          </div>
+          <div class="process-grid">
+            <article class="process-card">
+              <div class="process-number">01</div>
+              <h3>Choose your service</h3>
+              <p>Visitors immediately see commercial, residential, and event support without digging through menus.</p>
+            </article>
+            <article class="process-card">
+              <div class="process-number">02</div>
+              <h3>Request a quote</h3>
+              <p>The contact chooser lets clients pick text or email so outreach feels natural on any device.</p>
+            </article>
+            <article class="process-card">
+              <div class="process-number">03</div>
+              <h3>Schedule around your needs</h3>
+              <p>24/7 operations support daytime appointments, after-hours office cleaning, and event timelines.</p>
+            </article>
+            <article class="process-card">
+              <div class="process-number">04</div>
+              <h3>Enjoy a ready-for-anything space</h3>
+              <p>The page closes with trust, reviews, and FAQs so prospects feel reassured before they reach out.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews">
+        <div class="reviews-shell">
+          <div class="reviews-intro">
+            <div class="eyebrow">Client reviews</div>
+            <h2>Proof that the service matches the promise.</h2>
+            <p>
+              These testimonials are arranged in a more editorial, premium layout so the page feels
+              credible without turning into a noisy ratings wall.
+            </p>
+            <div class="reviews-badge">
+              Featured across venue cleaning, office care, home cleaning, and repeat referral work.
+            </div>
+            <a class="reviews-cta" href="https://g.page/r/CXiwRU-SLdwPEBE/review" target="_blank" rel="noopener noreferrer">
+              Leave a Google Review
+            </a>
+          </div>
+
+          <div class="review-grid">
+            <article class="review-card featured">
+              <div class="review-stars">★★★★★ Featured Review</div>
+              <blockquote>
+                “The best cleaning company that I’ve worked with! Jimmy is a pleasure to work with,
+                always replies quickly, checks in on the cleanings and is a great leader for his team.
+                We use Feather Duster Cleaning for our venue cleaning, our personal home cleaning and
+                cleaning during events and they never disappoint!”
+              </blockquote>
+              <footer>
+                <div>
+                  <strong>Natalia Valencia</strong>
+                  <span>Venue, residential, and event cleaning client</span>
+                </div>
+                <span>Google review</span>
+              </footer>
+            </article>
+
+            <article class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <blockquote>
+                “Working with the team was effortless. They were very meticulous in their cleaning
+                and spent hours on every detail of a very difficult and dirty job. I highly recommend
+                this service and I’m blown away by the results.”
+              </blockquote>
+              <footer>
+                <div>
+                  <strong>Gina Cabral</strong>
+                  <span>Detailed cleaning project</span>
+                </div>
+                <span>Google review</span>
+              </footer>
+            </article>
+
+            <article class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <blockquote>
+                “I had an excellent experience with Feather Duster Cleaning. They left my house
+                sparkling clean.”
+              </blockquote>
+              <footer>
+                <div>
+                  <strong>Janet Brandon</strong>
+                  <span>Residential cleaning client</span>
+                </div>
+                <span>Google review</span>
+              </footer>
+            </article>
+
+            <article class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <blockquote>
+                “Jim and his team was fantastic. They were super helpful and on time. We highly
+                recommend their janitorial services to anyone in OC!”
+              </blockquote>
+              <footer>
+                <div>
+                  <strong>Dillon Roffa</strong>
+                  <span>Commercial janitorial client</span>
+                </div>
+                <span>Google review</span>
+              </footer>
+            </article>
+
+            <article class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <blockquote>
+                “Feather Duster did a great job at cleaning our new home. Mercedes came and cleaned
+                it from top to bottom and did a beautiful job. We will definitely be reaching out again.”
+              </blockquote>
+              <footer>
+                <div>
+                  <strong>Mel4 Islas</strong>
+                  <span>New home cleaning client</span>
+                </div>
+                <span>Google review</span>
+              </footer>
+            </article>
+
+            <article class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <blockquote>
+                “We’ve been using Feather Duster Cleaning for our office for quite some time now,
+                and we couldn’t be happier with their service. From day one, they have been reliable,
+                professional, and incredibly thorough.”
+              </blockquote>
+              <footer>
+                <div>
+                  <strong>Edwin Perez</strong>
+                  <span>Office cleaning client</span>
+                </div>
+                <span>Google review</span>
+              </footer>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq">
+        <div class="faq-shell">
+          <div class="faq-intro">
+            <div class="eyebrow">Frequently asked</div>
+            <h2>Answers that help clients book with confidence.</h2>
+            <p>
+              This section gives visitors and search systems the same plain-language information
+              about your services, availability, and service area. That consistency helps the page
+              feel more trustworthy and easier to understand.
+            </p>
+            <div class="faq-note">
+              Strong visibility in search and AI recommendations comes from clear service pages,
+              real business details, reviews, citations, and consistent on-page facts. This FAQ is
+              one strong step, not the whole system.
+            </div>
+          </div>
+
+          <div class="faq-list">
+            <details class="faq-item" open>
+              <summary>What services does Feather Duster Cleaning offer?</summary>
+              <p class="faq-answer">
+                Feather Duster Cleaning provides commercial, residential, and event cleaning services
+                tailored to offices, homes, venues, and high-traffic spaces.
+              </p>
+            </details>
+
+            <details class="faq-item">
+              <summary>What areas do you serve?</summary>
+              <p class="faq-answer">
+                We serve Los Angeles, Inland Empire, and Orange County.
+              </p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Do you operate 24/7?</summary>
+              <p class="faq-answer">
+                Yes. Feather Duster Cleaning operates 24/7 and can coordinate daytime, after-hours,
+                night, and event-based service schedules.
+              </p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Do you offer recurring cleaning plans?</summary>
+              <p class="faq-answer">
+                Yes. We offer recurring plans for commercial spaces and routine residential service,
+                along with flexible scheduling for event support.
+              </p>
+            </details>
+
+            <details class="faq-item">
+              <summary>How can I request a quote?</summary>
+              <p class="faq-answer">
+                You can request a quote by text or email. Use the contact buttons on this page to
+                choose the option that works best for you.
+              </p>
+            </details>
+
+            <details class="faq-item">
+              <summary>What is included in event cleaning support?</summary>
+              <p class="faq-answer">
+                Event cleaning support can include pre-event prep, on-site touchpoint refreshes,
+                trash management, restroom attention, and post-event cleanup.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="final-cta">
+        <div class="cta-wrap">
+          <div>
+            <div class="eyebrow">Ready to book</div>
+            <h2>Book a cleaning partner that shows up polished before the work even starts.</h2>
+            <p>
+              Feather Duster Cleaning is positioned here for fast quote requests, clear service understanding,
+              and a more elevated first impression across residential, commercial, and event clients.
+            </p>
+          </div>
+          <div class="contact-block">
+            <span>Contact Feather Duster</span>
+            <a href="mailto:Dusty@FeatherDusterCleaning.com">Dusty@FeatherDusterCleaning.com</a>
+            <a href="tel:7149511041">714-951-1041</a>
+            <div class="contact-actions">
+              <button class="button primary" type="button" data-contact-trigger>Request a Quote</button>
+              <button class="button secondary" type="button" data-contact-trigger>Contact Us</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Feather Duster Cleaning • Los Angeles • Inland Empire • Orange County</span>
+      <span>Commercial • Residential • Event Services • 24/7</span>
+    </footer>
+
+    <div class="contact-modal" id="contact-modal" aria-hidden="true">
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+        <div class="modal-top">
+          <div>
+            <div class="eyebrow">Let’s connect</div>
+            <h3 id="contact-modal-title">How would you like to reach us?</h3>
+          </div>
+          <button class="modal-close" type="button" aria-label="Close contact options">&times;</button>
+        </div>
+        <p class="modal-copy">
+          Choose text or email and your device will open the right app so you can contact Feather Duster
+          directly with your permission.
+        </p>
+        <div class="contact-options">
+          <button class="contact-option" type="button" data-contact-method="sms">
+            <span>Text us</span>
+            <strong>714-951-1041</strong>
+          </button>
+          <button class="contact-option" type="button" data-contact-method="email">
+            <span>Email us</span>
+            <strong>Dusty@FeatherDusterCleaning.com</strong>
+          </button>
+        </div>
+        <div class="contact-meta">
+          Available across Los Angeles, Inland Empire, and Orange County with 24/7 operations.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const modal = document.getElementById("contact-modal");
+      const panel = modal.querySelector(".modal-panel");
+      const closeButton = modal.querySelector(".modal-close");
+      const triggers = document.querySelectorAll("[data-contact-trigger]");
+      const options = modal.querySelectorAll("[data-contact-method]");
+      let lastTrigger = null;
+
+      function openModal(trigger) {
+        lastTrigger = trigger || document.activeElement;
+        modal.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+        closeButton.focus();
+      }
+
+      function closeModal() {
+        modal.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+        if (lastTrigger && typeof lastTrigger.focus === "function") {
+          lastTrigger.focus();
+        }
+      }
+
+      triggers.forEach((trigger) => {
+        trigger.addEventListener("click", () => openModal(trigger));
+      });
+
+      closeButton.addEventListener("click", closeModal);
+
+      modal.addEventListener("click", (event) => {
+        if (!panel.contains(event.target)) {
+          closeModal();
+        }
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && modal.getAttribute("aria-hidden") === "false") {
+          closeModal();
+        }
+      });
+
+      options.forEach((option) => {
+        option.addEventListener("click", () => {
+          const method = option.getAttribute("data-contact-method");
+          const href = method === "sms"
+            ? "sms:7149511041"
+            : "mailto:Dusty@FeatherDusterCleaning.com";
+          window.location.href = href;
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
