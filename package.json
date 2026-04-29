@@ -1,0 +1,13 @@
+{
+  "name": "feather-duster-cleaning",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Marketing site for Feather Duster Cleaning — commercial, residential, and event cleaning across Los Angeles, Inland Empire, and Orange County.",
+  "scripts": {
+    "dev": "npx -y serve@latest .",
+    "start": "npx -y serve@latest ."
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
