@@ -1231,10 +1231,24 @@
       margin: 0 auto;
       padding: 0 0 2rem;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
-      gap: 1rem;
+      align-items: center;
+      gap: 0.5rem 1rem;
       color: var(--muted);
       font-size: 0.9rem;
+    }
+
+    footer.site-footer a {
+      color: var(--muted);
+      border-bottom: 1px solid transparent;
+      transition: color 180ms ease, border-color 180ms ease;
+    }
+
+    footer.site-footer a:hover,
+    footer.site-footer a:focus-visible {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
     }
 
     @keyframes rise {
@@ -1863,8 +1877,9 @@
     </main>
 
     <footer class="site-footer">
-      <span>&copy; <span id="footer-year">2026</span> Feather Duster Cleaning • Los Angeles • Inland Empire • Orange County</span>
-      <span>Commercial • Residential • Event Services • 24/7</span>
+      <span>&copy; <span id="footer-year">2026</span> Feather Duster Cleaning &bull; Los Angeles &bull; Inland Empire &bull; Orange County</span>
+      <span>Commercial &bull; Residential &bull; Event Services &bull; 24/7</span>
+      <a href="/terms">Terms &amp; Conditions</a>
     </footer>
 
     <div class="contact-modal" id="contact-modal" aria-hidden="true">
