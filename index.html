@@ -697,6 +697,86 @@
       color: var(--accent);
     }
 
+    .gallery-intro {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: 2rem;
+      align-items: end;
+      margin-bottom: 1.75rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      grid-auto-rows: 12rem;
+      gap: 1rem;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 1.5rem;
+      background: rgba(15, 41, 64, 0.08);
+      box-shadow: 0 14px 40px rgba(15, 41, 64, 0.10);
+      transform: translateY(20px);
+      opacity: 0;
+      animation: rise 700ms ease forwards;
+    }
+
+    .gallery-item:nth-child(2) { animation-delay: 80ms; }
+    .gallery-item:nth-child(3) { animation-delay: 160ms; }
+    .gallery-item:nth-child(4) { animation-delay: 240ms; }
+    .gallery-item:nth-child(5) { animation-delay: 320ms; }
+    .gallery-item:nth-child(6) { animation-delay: 400ms; }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 700ms ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.04);
+    }
+
+    .gallery-item::after {
+      content: attr(data-caption);
+      position: absolute;
+      left: 1rem;
+      right: 1rem;
+      bottom: 1rem;
+      padding: 0.5rem 0.85rem;
+      border-radius: 999px;
+      background: rgba(15, 41, 64, 0.78);
+      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(8px);
+      color: #fff;
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      width: -moz-fit-content;
+      width: fit-content;
+      max-width: calc(100% - 2rem);
+      opacity: 0;
+      transform: translateY(6px);
+      transition: opacity 220ms ease, transform 220ms ease;
+      pointer-events: none;
+    }
+
+    .gallery-item:hover::after,
+    .gallery-item:focus-within::after {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .gallery-item--feature { grid-column: span 5; grid-row: span 2; }
+    .gallery-item--wide { grid-column: span 7; grid-row: span 1; }
+    .gallery-item--third { grid-column: span 4; grid-row: span 1; }
+    .gallery-item--quarter { grid-column: span 3; grid-row: span 1; }
+    .gallery-item--tall { grid-column: span 4; grid-row: span 2; }
+    .gallery-item--half { grid-column: span 8; grid-row: span 2; }
+
     .assurance {
       display: grid;
       grid-template-columns: minmax(300px, 0.92fr) minmax(0, 1.08fr);
@@ -1367,6 +1447,23 @@
       .reviews-intro {
         position: static;
       }
+
+      .gallery-intro {
+        grid-template-columns: 1fr;
+        align-items: start;
+      }
+
+      .gallery {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        grid-auto-rows: 11rem;
+      }
+
+      .gallery-item--feature { grid-column: span 6; grid-row: span 2; }
+      .gallery-item--wide { grid-column: span 6; grid-row: span 1; }
+      .gallery-item--third { grid-column: span 3; grid-row: span 1; }
+      .gallery-item--quarter { grid-column: span 3; grid-row: span 1; }
+      .gallery-item--tall { grid-column: span 3; grid-row: span 2; }
+      .gallery-item--half { grid-column: span 3; grid-row: span 2; }
     }
 
     @media (max-width: 640px) {
@@ -1427,6 +1524,30 @@
         padding: 1.15rem;
       }
 
+      .gallery {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 14rem;
+      }
+
+      .gallery-item--feature,
+      .gallery-item--wide,
+      .gallery-item--third,
+      .gallery-item--quarter,
+      .gallery-item--tall,
+      .gallery-item--half {
+        grid-column: 1 / -1;
+        grid-row: span 1;
+      }
+
+      .gallery-item--feature {
+        grid-row: span 2;
+      }
+
+      .gallery-item::after {
+        opacity: 1;
+        transform: none;
+      }
+
       footer.site-footer {
         flex-direction: column;
       }
@@ -1447,6 +1568,7 @@
         </a>
         <div class="nav-links">
           <a href="#services">Services</a>
+          <a href="#work">Work</a>
           <a href="#standards">Standards</a>
           <a href="#reviews">Reviews</a>
           <a href="#faq">FAQ</a>
@@ -1545,7 +1667,7 @@
         </div>
 
         <div class="service-grid">
-          <article class="service-panel" style="--panel-bg: linear-gradient(135deg, rgba(15,41,64,0.4), rgba(15,41,64,0.82)), url('/assets/fd-blue.png') center/140% no-repeat;">
+          <article class="service-panel" style="--panel-bg: linear-gradient(180deg, rgba(15,41,64,0.25) 0%, rgba(15,41,64,0.85) 100%), url('/assets/result-cafe.jpg') center/cover no-repeat;">
             <div class="label">Commercial</div>
             <h3>Reliable care for professional spaces.</h3>
             <p>
@@ -1559,7 +1681,7 @@
             </ul>
           </article>
 
-          <article class="service-panel" style="--panel-bg: linear-gradient(135deg, rgba(211,161,74,0.28), rgba(15,41,64,0.8)), url('/assets/fd-white.png') center/135% no-repeat;">
+          <article class="service-panel" style="--panel-bg: linear-gradient(180deg, rgba(15,41,64,0.25) 0%, rgba(15,41,64,0.85) 100%), url('/assets/result-kitchen.jpg') center/cover no-repeat;">
             <div class="label">Residential</div>
             <h3>Comfort-first cleaning for everyday living.</h3>
             <p>
@@ -1573,7 +1695,7 @@
             </ul>
           </article>
 
-          <article class="service-panel" style="--panel-bg: linear-gradient(135deg, rgba(15,41,64,0.24), rgba(15,41,64,0.84)), url('/assets/banner.png') center/cover no-repeat;">
+          <article class="service-panel" style="--panel-bg: linear-gradient(180deg, rgba(15,41,64,0.30) 0%, rgba(15,41,64,0.85) 100%), url('/assets/work-event-venue.jpg') center/cover no-repeat;">
             <div class="label">Event</div>
             <h3>Fast-turn cleaning for before and after the crowd.</h3>
             <p>
@@ -1586,6 +1708,40 @@
               <li>Post-event breakdown recovery</li>
             </ul>
           </article>
+        </div>
+      </section>
+
+      <section id="work" aria-labelledby="work-heading">
+        <div class="gallery-intro">
+          <div>
+            <p class="eyebrow">Recent jobs</p>
+            <h2 id="work-heading">A look at the spaces we leave behind.</h2>
+          </div>
+          <p class="section-note">
+            Real homes, offices, and venues across Southern California &mdash; cleaned, detailed,
+            and ready before clients walk back in. Hover any photo for context.
+          </p>
+        </div>
+
+        <div class="gallery">
+          <figure class="gallery-item gallery-item--feature" data-caption="Detail dusting · Residential">
+            <img src="/assets/work-curtain-dust.jpg" alt="Feather Duster team member detailing patterned drapery in a residential living room" loading="lazy" decoding="async" width="1980" height="3520">
+          </figure>
+          <figure class="gallery-item gallery-item--wide" data-caption="Pre-event prep · Venue">
+            <img src="/assets/work-event-venue.jpg" alt="Wide-open event venue with vaulted wood ceilings prepared by Feather Duster Cleaning" loading="lazy" decoding="async" width="1206" height="2144">
+          </figure>
+          <figure class="gallery-item gallery-item--third" data-caption="High reach · Skylight">
+            <img src="/assets/work-skylight.jpg" alt="Feather Duster team member cleaning a residential skylight from a step ladder" loading="lazy" decoding="async" width="3024" height="4032">
+          </figure>
+          <figure class="gallery-item gallery-item--quarter" data-caption="Air vent detail">
+            <img src="/assets/work-vent.jpg" alt="Feather Duster team member detailing a ceiling air-return vent" loading="lazy" decoding="async" width="4284" height="5712">
+          </figure>
+          <figure class="gallery-item gallery-item--tall" data-caption="Bathroom reset">
+            <img src="/assets/result-bathroom.jpg" alt="Cleaned tile shower with floral accent in the niche" loading="lazy" decoding="async" width="1206" height="1608">
+          </figure>
+          <figure class="gallery-item gallery-item--half" data-caption="Move-in ready · Kitchen">
+            <img src="/assets/result-living-room.jpg" alt="Recently cleaned modern living and dining space" loading="lazy" decoding="async" width="1206" height="1608">
+          </figure>
         </div>
       </section>
 
